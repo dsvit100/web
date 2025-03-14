@@ -1,0 +1,22 @@
+h3 {
+    color: green;
+}
+
+p {
+    color: orange;
+}
+
+#first{
+ /* # = id값이 무엇(first)인 것 */
+    color: yellow
+}
+
+#s{
+    color: pink
+}
+
+/* p보다 # 아이디 지정한 것이 우선순위 높음 */
+
+.a {
+    color: rgb(0, 128, 0)
+}
