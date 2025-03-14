@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!-- 부트스트랩 안에서는 색상들을 단어로 지정해줄 것 -->
+     <!-- 장점: 편하다, 단점: 커스터마이징이 안된당... -->
+    <h1 class="text-danger bg-info">hello</h1>
+
+    <!-- 부트스트랩에서 네모를 만들어줄 수 없기 때문에 style로 직접 만들어 준 것 -->
+    <div class="bg-danger border border-dark border-5 rounded" style="width:100px; height:100px"></div>
+
+    <!-- div는 기본적으로 박스형태, 하지만 inline이 설정되어 있기 때문에 영역이 텍스트까지만 적용됨 -->
+    <div class="d-inline text-bg-primary">test</div>
+
+    <!-- 반대의 상황...? 잉 그럼 굳이 b-block 안 해도 되지 않? -->
+    <div class="d-block text-bg-primary">block</div>
+
+    <div class="d-flex justify-content-around">
+        <div>frog1</div>
+        <div>frog2</div>
+        <div>frog3</div>
+    </div>
+
+    <!-- mb = magin bottom -->
+     <!-- mx = magin x축 -->
+      <!-- 사방으로 여백을 주겠다 = m -->
+    <div class="bg-primary mb-3" style="width:200px; height:100px"></div>
+    <div class="bg-success mx-5" style="width:200px; height:100px"></div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!-- grid 비율로 배치를 변경해주는 시스템 -->
+<!-- xs 모바일 md 태블릿 xl pc -->
+<!-- grid class 규칙임 -->
+<div class="container"> 
+    <div class="row">
+        <!-- col = column 화면은 12칸, 아래는 비율을 나눈 것-->
+         <!-- 여러 경우의 수를 만들기 좋은 수 = 12 -->
+          <!-- col-sm = 작은 모바일 환경일 경우 보여줄 비율을 작성하기기 -->
+        <div class="col-sm-12 col-md-6 bg-primary">item1</div>
+        <div class="col-sm-12 col-md-6 bg-danger">item2</div>
+    </div>
+</div>
+
+</body>
+</html>
